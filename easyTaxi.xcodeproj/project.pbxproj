@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F977D9236A2940E0408D416 /* Pods_easyTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4847B67279DA2D3191819360 /* Pods_easyTaxi.framework */; };
+		AE0E660A26CBF50F004231D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E660926CBF50F004231D8 /* User.swift */; };
+		AE0E660C26CD3CB2004231D8 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E660B26CD3CB2004231D8 /* LocationHandler.swift */; };
+		AE0E660E26CE8AC7004231D8 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E660D26CE8AC7004231D8 /* DriverAnnotation.swift */; };
+		AE18ECB226C54B3E0065BE40 /* LoactionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE18ECB126C54B3E0065BE40 /* LoactionInputView.swift */; };
+		AE7A33AB26BFCE4B003A96E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7A33AA26BFCE4B003A96E1 /* Extensions.swift */; };
+		AE7A33AD26C006FE003A96E1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7A33AC26C006FE003A96E1 /* SignUpController.swift */; };
+		AE7A33AF26C010AE003A96E1 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7A33AE26C010AE003A96E1 /* AuthButton.swift */; };
+		AE7A33B126C0209A003A96E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE7A33B026C0209A003A96E1 /* GoogleService-Info.plist */; };
+		AE99080B26C2AC9300FBDBFB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99080A26C2AC9300FBDBFB /* HomeController.swift */; };
+		AECD72D626C760F400CAF9CE /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD72D526C760F400CAF9CE /* LocationCell.swift */; };
+		AECD72D826C76EDE00CAF9CE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD72D726C76EDE00CAF9CE /* Service.swift */; };
+		AECD835B26BFBFA40009E523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD835A26BFBFA40009E523 /* AppDelegate.swift */; };
+		AECD835D26BFBFA40009E523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD835C26BFBFA40009E523 /* SceneDelegate.swift */; };
+		AECD836226BFBFA40009E523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD836026BFBFA40009E523 /* Main.storyboard */; };
+		AECD836426BFBFA50009E523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECD836326BFBFA50009E523 /* Assets.xcassets */; };
+		AECD836726BFBFA50009E523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD836526BFBFA50009E523 /* LaunchScreen.storyboard */; };
+		AECD837826BFC1050009E523 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD837726BFC1050009E523 /* LoginController.swift */; };
+		AEDACC2626C40A6A0008DF86 /* LoactionInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDACC2526C40A6A0008DF86 /* LoactionInputActivationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C34D70EB161B6FCE822DEF1 /* Pods-easyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyTaxi.debug.xcconfig"; path = "Target Support Files/Pods-easyTaxi/Pods-easyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
+		4847B67279DA2D3191819360 /* Pods_easyTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762B458F6D5329CDE7F483B3 /* Pods-easyTaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyTaxi.release.xcconfig"; path = "Target Support Files/Pods-easyTaxi/Pods-easyTaxi.release.xcconfig"; sourceTree = "<group>"; };
+		AE0E660926CBF50F004231D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AE0E660B26CD3CB2004231D8 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		AE0E660D26CE8AC7004231D8 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
+		AE18ECB126C54B3E0065BE40 /* LoactionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoactionInputView.swift; sourceTree = "<group>"; };
+		AE7A33AA26BFCE4B003A96E1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AE7A33AC26C006FE003A96E1 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		AE7A33AE26C010AE003A96E1 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		AE7A33B026C0209A003A96E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE99080A26C2AC9300FBDBFB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		AECD72D526C760F400CAF9CE /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		AECD72D726C76EDE00CAF9CE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AECD835726BFBFA40009E523 /* easyTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECD835A26BFBFA40009E523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AECD835C26BFBFA40009E523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AECD836126BFBFA40009E523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AECD836326BFBFA50009E523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECD836626BFBFA50009E523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AECD836826BFBFA50009E523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECD837726BFC1050009E523 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		AEDACC2526C40A6A0008DF86 /* LoactionInputActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoactionInputActivationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECD835426BFBFA40009E523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F977D9236A2940E0408D416 /* Pods_easyTaxi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE335D145E67992B2327888 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4847B67279DA2D3191819360 /* Pods_easyTaxi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AECD834E26BFBFA40009E523 = {
+			isa = PBXGroup;
+			children = (
+				AECD835926BFBFA40009E523 /* easyTaxi */,
+				AECD835826BFBFA40009E523 /* Products */,
+				CFC0E9A21CBAFA96CCC2EFB8 /* Pods */,
+				0FE335D145E67992B2327888 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AECD835826BFBFA40009E523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECD835726BFBFA40009E523 /* easyTaxi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECD835926BFBFA40009E523 /* easyTaxi */ = {
+			isa = PBXGroup;
+			children = (
+				AECD837226BFBFDD0009E523 /* Model */,
+				AECD837326BFC0250009E523 /* View */,
+				AECD837426BFC0300009E523 /* Controller */,
+				AECD837526BFC0370009E523 /* Service */,
+				AECD837626BFC0430009E523 /* Utils */,
+				AECD835A26BFBFA40009E523 /* AppDelegate.swift */,
+				AECD835C26BFBFA40009E523 /* SceneDelegate.swift */,
+				AECD836026BFBFA40009E523 /* Main.storyboard */,
+				AECD836326BFBFA50009E523 /* Assets.xcassets */,
+				AE7A33B026C0209A003A96E1 /* GoogleService-Info.plist */,
+				AECD836526BFBFA50009E523 /* LaunchScreen.storyboard */,
+				AECD836826BFBFA50009E523 /* Info.plist */,
+			);
+			path = easyTaxi;
+			sourceTree = "<group>";
+		};
+		AECD837226BFBFDD0009E523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E660926CBF50F004231D8 /* User.swift */,
+				AE0E660D26CE8AC7004231D8 /* DriverAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AECD837326BFC0250009E523 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE7A33AE26C010AE003A96E1 /* AuthButton.swift */,
+				AEDACC2526C40A6A0008DF86 /* LoactionInputActivationView.swift */,
+				AE18ECB126C54B3E0065BE40 /* LoactionInputView.swift */,
+				AECD72D526C760F400CAF9CE /* LocationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AECD837426BFC0300009E523 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AECD837726BFC1050009E523 /* LoginController.swift */,
+				AE7A33AC26C006FE003A96E1 /* SignUpController.swift */,
+				AE99080A26C2AC9300FBDBFB /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AECD837526BFC0370009E523 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AECD72D726C76EDE00CAF9CE /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AECD837626BFC0430009E523 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE7A33AA26BFCE4B003A96E1 /* Extensions.swift */,
+				AE0E660B26CD3CB2004231D8 /* LocationHandler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFC0E9A21CBAFA96CCC2EFB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C34D70EB161B6FCE822DEF1 /* Pods-easyTaxi.debug.xcconfig */,
+				762B458F6D5329CDE7F483B3 /* Pods-easyTaxi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECD835626BFBFA40009E523 /* easyTaxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECD836B26BFBFA50009E523 /* Build configuration list for PBXNativeTarget "easyTaxi" */;
+			buildPhases = (
+				A785C187951495E6568EE127 /* [CP] Check Pods Manifest.lock */,
+				AECD835326BFBFA40009E523 /* Sources */,
+				AECD835426BFBFA40009E523 /* Frameworks */,
+				AECD835526BFBFA40009E523 /* Resources */,
+				E965C7C2FCBF1F1E10280298 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = easyTaxi;
+			productName = easyTaxi;
+			productReference = AECD835726BFBFA40009E523 /* easyTaxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECD834F26BFBFA40009E523 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AECD835626BFBFA40009E523 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AECD835226BFBFA40009E523 /* Build configuration list for PBXProject "easyTaxi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECD834E26BFBFA40009E523;
+			productRefGroup = AECD835826BFBFA40009E523 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECD835626BFBFA40009E523 /* easyTaxi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECD835526BFBFA40009E523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECD836726BFBFA50009E523 /* LaunchScreen.storyboard in Resources */,
+				AE7A33B126C0209A003A96E1 /* GoogleService-Info.plist in Resources */,
+				AECD836426BFBFA50009E523 /* Assets.xcassets in Resources */,
+				AECD836226BFBFA40009E523 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A785C187951495E6568EE127 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easyTaxi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E965C7C2FCBF1F1E10280298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easyTaxi/Pods-easyTaxi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-easyTaxi/Pods-easyTaxi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-easyTaxi/Pods-easyTaxi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECD835326BFBFA40009E523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7A33AD26C006FE003A96E1 /* SignUpController.swift in Sources */,
+				AE7A33AF26C010AE003A96E1 /* AuthButton.swift in Sources */,
+				AE99080B26C2AC9300FBDBFB /* HomeController.swift in Sources */,
+				AECD835B26BFBFA40009E523 /* AppDelegate.swift in Sources */,
+				AE0E660E26CE8AC7004231D8 /* DriverAnnotation.swift in Sources */,
+				AECD837826BFC1050009E523 /* LoginController.swift in Sources */,
+				AE18ECB226C54B3E0065BE40 /* LoactionInputView.swift in Sources */,
+				AECD72D626C760F400CAF9CE /* LocationCell.swift in Sources */,
+				AE0E660C26CD3CB2004231D8 /* LocationHandler.swift in Sources */,
+				AECD835D26BFBFA40009E523 /* SceneDelegate.swift in Sources */,
+				AE0E660A26CBF50F004231D8 /* User.swift in Sources */,
+				AECD72D826C76EDE00CAF9CE /* Service.swift in Sources */,
+				AEDACC2626C40A6A0008DF86 /* LoactionInputActivationView.swift in Sources */,
+				AE7A33AB26BFCE4B003A96E1 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AECD836026BFBFA40009E523 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECD836126BFBFA40009E523 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AECD836526BFBFA50009E523 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECD836626BFBFA50009E523 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECD836926BFBFA50009E523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AECD836A26BFBFA50009E523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECD836C26BFBFA50009E523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C34D70EB161B6FCE822DEF1 /* Pods-easyTaxi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D943R2L97Q;
+				INFOPLIST_FILE = easyTaxi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jim.easyTaxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AECD836D26BFBFA50009E523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762B458F6D5329CDE7F483B3 /* Pods-easyTaxi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D943R2L97Q;
+				INFOPLIST_FILE = easyTaxi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jim.easyTaxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECD835226BFBFA40009E523 /* Build configuration list for PBXProject "easyTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECD836926BFBFA50009E523 /* Debug */,
+				AECD836A26BFBFA50009E523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECD836B26BFBFA50009E523 /* Build configuration list for PBXNativeTarget "easyTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECD836C26BFBFA50009E523 /* Debug */,
+				AECD836D26BFBFA50009E523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECD834F26BFBFA40009E523 /* Project object */;
+}

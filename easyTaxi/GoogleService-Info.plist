@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>695440030098-71vn2fr8r9hprqb34u976h7ckudtrgkg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.695440030098-71vn2fr8r9hprqb34u976h7ckudtrgkg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCF3ILeb9KdHysB8HAfbdZ8pft2X5H3b4g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>695440030098</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Jim.easyTaxi</string>
+	<key>PROJECT_ID</key>
+	<string>easytaxi-f4df5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>easytaxi-f4df5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:695440030098:ios:a171d47db59bf58d79294b</string>
+</dict>
+</plist>
