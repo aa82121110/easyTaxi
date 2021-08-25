@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import MapKit
 
 class LocationCell: UITableViewCell {
     
     //MARK: - Porperties
+    
+    var placemark:MKPlacemark? {
+        didSet {
+            titleLabel.text = placemark?.name
+            addressLabel.text = placemark?.address
+        }
+    }
+    
     private let titleLabel:UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
-        label.text = "123,仁愛路"
         return label
     }()
     
@@ -21,7 +29,6 @@ class LocationCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .lightGray
-        label.text = "123,仁愛路,台北市"
         return label
     }()
     //MARK: - Lifecycle

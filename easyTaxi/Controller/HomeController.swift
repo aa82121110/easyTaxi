@@ -21,6 +21,7 @@ class HomeController: UIViewController {
     private let inputActivationView = LoactionInputActivationView()
     private let loactionInputView = LoactionInputView()
     private let tableView = UITableView()
+    private var searchResult = [MKPlacemark]()
     
     private final let locationInputViewHeight = CGFloat(200)
     
@@ -34,8 +35,6 @@ class HomeController: UIViewController {
         configureNavigationBar()
         checkIfUserLoggedIn()
         enableLocationServices()
-        fetchUserData()
-        fetchDrivers()
     }
     
     //MARK: - API
@@ -78,10 +77,8 @@ class HomeController: UIViewController {
                 nav.modalPresentationStyle = .overFullScreen
                 self.present(nav, animated: true, completion: nil)
             }
-            print("DEBUG: User not logged in..")
         }else {
-            print("DEBUG: User id is \(Auth.auth().currentUser?.uid)")
-            configureUI()
+            configure()
         }
     }
     
@@ -102,6 +99,12 @@ class HomeController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
     }
     //MARK: - Helper Funtions
+    func configure() {
+        configureUI()
+        fetchUserData()
+        fetchDrivers()
+    }
+    
     func configureUI() {
         configureMapView()
         
@@ -155,6 +158,27 @@ class HomeController: UIViewController {
         view.addSubview(tableView)
     }
 }
+// MARK: - Map Helper Functions
+private extension HomeController {
+    func searchBy(naturalLanguageQuery:String, completion: @escaping([MKPlacemark]) -> Void) {
+        var result = [MKPlacemark]()
+        
+        let request = MKLocalSearch.Request()
+        request.region = mapView.region
+        request.naturalLanguageQuery = naturalLanguageQuery
+        
+        let search = MKLocalSearch(request: request)
+        search.start { response, error in
+            guard let response = response else { return }
+            
+            response.mapItems.forEach { item in
+                result.append(item.placemark)
+                
+            }
+            completion(result)
+        }
+    }
+}
 
 // MARK: - MKMapViewDelegate
 extension HomeController: MKMapViewDelegate {
@@ -201,7 +225,16 @@ extension HomeController:LoactionInputActivationViewDelegate {
         
     }
 }
+
+// MARK: -LoactionInputViewDelegate
 extension HomeController:LoactionInputViewDelegate {
+    func executeSearch(query: String) {
+        searchBy(naturalLanguageQuery: query) { results in
+            self.searchResult = results
+            self.tableView.reloadData()
+        }
+    }
+    
     func dismissLoactionInputView() {
         
         UIView.animate(withDuration: 0.3) {
@@ -229,11 +262,16 @@ extension HomeController:UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 2 : 5
+        return section == 0 ? 2 : searchResult.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reusdIdentifier) as! LocationCell
+        
+        if indexPath.section == 1 {
+            cell.placemark = searchResult[indexPath.row]
+        }
+        
         return cell
     }
 }

@@ -137,7 +137,7 @@ class  SignUpController: UIViewController {
              guard let nav = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
              else {return}
              guard let controller = nav.viewControllers.first as? HomeController else {return}
-             controller.configureUI()
+             controller.configure()
              self.dismiss(animated: true, completion: nil)
         }
     }
