@@ -197,7 +197,7 @@ class HomeController: UIViewController {
         loactionInputView.alpha = 0
         loactionInputView.delegate = self
         
-        UIView.animate(withDuration: 0.45) {
+        UIView.animate(withDuration: 0.5) {
             self.loactionInputView.alpha = 1
         } completion: { _ in
             UIView.animate(withDuration: 0.3) {
@@ -208,6 +208,7 @@ class HomeController: UIViewController {
     
     func configureRideActionView() {
         view.addSubview(rideActionView)
+        rideActionView.delegate = self
         rideActionView.frame = CGRect(x: 0, y: view.frame.height , width:            view.frame.width, height: rideActionViewHeight)
     }
     
@@ -420,4 +421,14 @@ extension HomeController:UITableViewDelegate,UITableViewDataSource {
             self.animateRideRideActionView(shouldShow: true, destination: selectedPlacemark)
         }
     }
+}
+extension HomeController: RideActionViewDelegate {
+    func uploadTrip(_ view: RideActionView) {
+        guard let pickupCoordinates = locationManager?.location?.coordinate else { return }
+        guard let destinationCoordinates = view.destination?.coordinate else { return }
+        Service.shared.uploadTrip(pickupCoordinates, destinationCoordinates) { error, ref in
+            
+        }
+    }
+      
 }
